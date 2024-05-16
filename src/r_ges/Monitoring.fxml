@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="r_ges.MonitoringController">
+   <children>
+      <TableView fx:id="stockk_tab" fixedCellSize="2.0" layoutX="75.0" layoutY="100.0" prefHeight="200.0" prefWidth="452.0">
+        <columns>
+          <TableColumn fx:id="tb_ref" minWidth="-1.0" prefWidth="90.0" text="Reference" />
+          <TableColumn fx:id="tb_typ" minWidth="-1.0" prefWidth="90.0" text="Type" />
+            <TableColumn fx:id="tb_qte" minWidth="-1.0" prefWidth="90.0" text="Quantity" />
+            <TableColumn fx:id="tb_din" minWidth="-1.0" prefWidth="90.0" text="Date-in" />
+            <TableColumn fx:id="tb_dout" minWidth="-1.0" prefWidth="90.0" text="Date-out" />
+        </columns>
+      </TableView>
+      <Label layoutX="152.0" layoutY="14.0" text="Stock Monitoring" textFill="RED">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="back_btn1" layoutX="365.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="90.0" text="Back" />
+   </children>
+</AnchorPane>

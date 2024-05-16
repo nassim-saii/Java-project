@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="r_ges.Add_stockController">
+   <children>
+      <VBox layoutX="95.0" layoutY="106.0" prefHeight="163.0" prefWidth="100.0" spacing="15.0">
+         <children>
+            <Label text="Reference : " />
+            <Label text="Type : " />
+            <Label text="Quantity :" />
+            <Label layoutX="10.0" layoutY="10.0" text="Date in :" />
+            <Label layoutX="10.0" layoutY="27.0" text="Date out :" />
+         </children>
+      </VBox>
+      <VBox layoutX="169.0" layoutY="103.0" prefHeight="169.0" prefWidth="100.0" spacing="7.0">
+         <children>
+            <TextField fx:id="tf_ref" />
+            <TextField fx:id="tf_typ" layoutX="10.0" layoutY="10.0" />
+            <TextField fx:id="tf_qte" layoutX="10.0" layoutY="10.0" />
+            <TextField fx:id="tf_din" layoutX="10.0" layoutY="35.0" />
+            <TextField fx:id="tf_dout" layoutX="10.0" layoutY="85.0" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="317.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@download.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="validate_btn" layoutX="83.0" layoutY="284.0" mnemonicParsing="false" onAction="#addsStock" prefHeight="35.0" prefWidth="100.0" text="Validate" />
+      <Label layoutX="212.0" layoutY="24.0" prefHeight="53.0" prefWidth="117.0" text="STOCK" textAlignment="CENTER" textFill="#1100ff">
+         <font>
+            <Font name="Arial Narrow Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="back_btn" layoutX="220.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="100.0" text="Back" />
+   </children>
+</AnchorPane>
